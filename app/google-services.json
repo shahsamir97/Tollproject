@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "169629128949",
+    "project_id": "toll-system-76fcc",
+    "storage_bucket": "toll-system-76fcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169629128949:android:0f297dfd48f6b2abeecdbc",
+        "android_client_info": {
+          "package_name": "com.troll_project.apps.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169629128949-71cul4ddm4p9ivai2kvt9le4dhnb3b1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.troll_project.apps.myapplication",
+            "certificate_hash": "26b53f3222ab57de3c31d4c57cf1532d86f4e371"
+          }
+        },
+        {
+          "client_id": "169629128949-2rhk467uqc36dgvkai7fh5h30g6svmse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyJuMHM-PKtRquPK1m_LUQ_AxftGOmKDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169629128949-2rhk467uqc36dgvkai7fh5h30g6svmse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homepage">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.troll_project.apps.myapplication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homepage"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.troll_project.apps.myapplication.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.troll_project.apps.myapplication.Homepage"
+        android:label="Homepage"
+        tools:layout="@layout/fragment_homepage2">
+        <action
+            android:id="@+id/action_homepage_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+        <action
+            android:id="@+id/action_homepage_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homepage_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:popUpTo="@id/homepage"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.troll_project.apps.myapplication.UserProfileFragment"
+        android:label="UserProfileFragment"
+        tools:layout="@layout/fragment_user_profile"/>
+</navigation>
