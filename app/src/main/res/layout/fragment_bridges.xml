@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bridge"
+        tools:context=".BridgesFragment">>
+
+        <Button
+            android:id="@+id/padma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Padma "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <Button
+            android:id="@+id/jamuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jamuna"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/padma"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <Button
+            android:id="@+id/bhairav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bhairav"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jamuna"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <Button
+            android:id="@+id/meghna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meghna"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bhairav"
+            app:layout_constraintVertical_bias="0.184" />
+
+        <Button
+            android:id="@+id/mawa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mawa Expressway"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meghna"
+            app:layout_constraintVertical_bias="0.211" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</layout>
