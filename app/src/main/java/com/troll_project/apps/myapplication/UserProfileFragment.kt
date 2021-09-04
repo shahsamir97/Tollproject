@@ -39,9 +39,10 @@ class UserProfileFragment : Fragment() {
         binding.bridge.setOnClickListener {
             findNavController().navigate(R.id.action_userProfileFragment_to_bridgesFragment)
         }
-        binding.paymentButton.setOnClickListener {
+
+        binding.logoutButton.setOnClickListener {
             auth.signOut()
-            findNavController().popBackStack(R.id.homepage, false)
+            findNavController().navigate(R.id.action_userProfileFragment_to_homepage)
         }
     }
 }
