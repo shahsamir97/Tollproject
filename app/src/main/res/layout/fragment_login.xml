@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bridge"
         tools:context=".LoginFragment">
 
 
@@ -22,7 +23,9 @@
             android:hint="Email"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:singleLine="true"
             android:text="mdshahsamir@gmail.com"
+            android:textColor="#EDE5E5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.582"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +41,7 @@
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="123456"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/email"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/email"
@@ -60,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Don't have an account?"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/loginButton"
             app:layout_constraintStart_toStartOf="@+id/loginButton"
             app:layout_constraintTop_toBottomOf="@+id/loginButton" />
@@ -70,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Register"
-            android:textColor="@color/design_default_color_primary"
+            android:textColor="@color/teal_200"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/normalText"

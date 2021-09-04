@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.troll_project.apps.myapplication.databinding.FragmentUserProfileBinding
@@ -35,7 +36,9 @@ class UserProfileFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
 
         binding.userNameText.text = "Logged in as "+auth.currentUser?.email
-
+        binding.bridge.setOnClickListener {
+            findNavController().navigate(R.id.action_userProfileFragment_to_bridgesFragment)
+        }
         binding.paymentButton.setOnClickListener {
             auth.signOut()
             findNavController().popBackStack(R.id.homepage, false)

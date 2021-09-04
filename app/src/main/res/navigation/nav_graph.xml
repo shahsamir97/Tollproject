@@ -50,5 +50,54 @@
         android:id="@+id/userProfileFragment"
         android:name="com.troll_project.apps.myapplication.UserProfileFragment"
         android:label="UserProfileFragment"
-        tools:layout="@layout/fragment_user_profile"/>
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_bridgesFragment"
+            app:destination="@id/bridgesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bridgesFragment"
+        android:name="com.troll_project.apps.myapplication.BridgesFragment"
+        android:label="BridgesFragment" >
+        <action
+            android:id="@+id/action_bridgesFragment_to_bhairavFragment"
+            app:destination="@id/bhairavFragment" />
+        <action
+            android:id="@+id/action_bridgesFragment_to_meghnaFragment"
+            app:destination="@id/meghnaFragment" />
+        <action
+            android:id="@+id/action_bridgesFragment_to_jamunaFragment"
+            app:destination="@id/jamunaFragment" />
+        <action
+            android:id="@+id/action_bridgesFragment_to_mawaFragment2"
+            app:destination="@id/mawaFragment" />
+        <action
+            android:id="@+id/action_bridgesFragment_to_padmaFragment2"
+            app:destination="@id/padmaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bhairavFragment"
+        android:name="com.troll_project.apps.myapplication.BhairavFragment"
+        android:label="fragment_bhairav"
+        tools:layout="@layout/fragment_bhairav" />
+    <fragment
+        android:id="@+id/mawaFragment"
+        android:name="com.troll_project.apps.myapplication.MawaFragment"
+        android:label="fragment_mawa"
+        tools:layout="@layout/fragment_mawa" />
+    <fragment
+        android:id="@+id/padmaFragment"
+        android:name="com.troll_project.apps.myapplication.PadmaFragment"
+        android:label="fragment_padma"
+        tools:layout="@layout/fragment_padma" />
+    <fragment
+        android:id="@+id/meghnaFragment"
+        android:name="com.troll_project.apps.myapplication.MeghnaFragment"
+        android:label="fragment_meghna"
+        tools:layout="@layout/fragment_meghna" />
+    <fragment
+        android:id="@+id/jamunaFragment"
+        android:name="com.troll_project.apps.myapplication.JamunaFragment"
+        android:label="fragment_jamuna"
+        tools:layout="@layout/fragment_jamuna" />
 </navigation>
